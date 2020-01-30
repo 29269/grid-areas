@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Neuton&display=swap');
+html, body, h3{
+    margin: 0;
+    padding: 0;
+    font-family: 'Neuton', serif;
+}
+header{
+  padding: 2em;
+}
+header, aside{
+  background-color: rgb(241, 179, 197);
+}
+footer{
+  padding: 2em;
+}
+h1, h3{
+  font-family: 'Neuton';
+}
+h1, h2 ,.tagline, .lang{
+  color: #FE267B;
+}
+.lang{
+  text-align: right;
+}
+section{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-bottom: .2em;
+
+}
+article{
+  padding: 1em;
+}
+section img {
+  max-width: 100%;
+}
+.nummer{
+  background-color:#FE267B;
+  color: #fff;
+  font-size: 3em;
+  width: 1.2em;
+  text-align: right;
+  padding: .3em;
+}
+aside ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+aside h3{
+  background-color:#FE267B;
+  padding: 2em;
+  color: #fff;
+}
+aside a{
+  text-decoration: none;
+  padding: 2em;
+  display: block;
+}
+aside a:hover{
+  background-color:#FE267B;
+    color: #fff;
+}
+footer{
+  background-color: #333;
+  color: #FE267B;
+  padding: 3em;
+}
+@media screen and (min-width: 760px){
+  .foto{
+    display: block;
+    background-image: url('change.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+body{
+display: grid;
+grid-template-columns: 1fr 1fr ;
+grid-template-areas: "kop kop"
+"t1 t2"
+"t3 t4"
+"t3 t5"
+"foto t6"
+"foto t7"
+"t8 aside"
+"t9 aside"
+"t10 aside"
+"voet voet";
+}
+header{
+  grid-area: kop;
+}
+.vertrouw{
+grid-area: t1;
+}
+.feiten{
+  grid-area: t2;
+}
+.lef{
+  grid-area: t3;
+}
+.geenruimte{
+  grid-area: t4;
+}
+.niettegroot{
+  grid-area: t5;
+}
+.foto{
+  grid-area: foto;
+}
+.fijn{
+  grid-area: t6;
+}
+.richt{
+  grid-area: t7;
+}
+.stap{
+  grid-area: t8;
+}
+.belangen{
+  grid-area: t9;
+}
+.visualiseer{
+  grid-area: t10;
+}
+aside{
+  grid-area: aside;
+}
+footer{
+  grid-area: voet;
+}
+.vertrouw-article{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.vertrouw-article h3{
+  grid-column: span 2;
+
+}
+footer{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+}
+@media screen and (min-width:1000px) {
+    body{
+         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "kop kop kop"
+        "t1 t2 foto"
+        "t3 t4 foto"
+        "t3 t5 foto"
+        "aside t6 t6"
+        "aside t7 t8"
+        "aside t9 t10"
+        "aside voet voet";
+    }
+}
